@@ -1,0 +1,52 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{textcmds}
+\usepackage{xurl}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[left,modulo]{lineno}
+\usepackage{lipsum}
+
+%Definições Memoir
+\OnehalfSpacing
+\pagestyle{empty}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9.in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\headheight}{0in}
+
+%Informações do cabeçalho.
+\newcommand{\metod}{\noindent\large \textsc{\textbf{Metodologia -- 3\textsuperscript{o} ADS}}}
+
+%Docente
+\newcommand{\aapl}{\noindent\large \textsc{\textbf{André Padilha}}}
+
+%Informações do discente e curso/turno.
+\newcommand{\estudante}[1]{\noindent\normalsize\textbf{Estudante:} #1\\}
+
+
+%Informações da atividade.
+\newcommand{\atividade}[1]{
+	\vspace{5mm}
+	{\textsc{\textbf{Atividade:}}} {#1}
+	\ \\
+}
+
+%Informações da data de entrega.
+\newcommand{\dataentrega}[1]{\indent\normalsize\textbf{Data de entrega:} #1}
+
+%Configurações do logo do IFPE no cabeçalho.
+\newcommand{\logo}{
+	\begin{minipage}{3cm}
+		\begin{flushright}
+			\includegraphics[scale=.15]{img/logo-ifpe.png}
+		\end{flushright}
+	\end{minipage}	
+}
+
+
+
+
+
+
